@@ -1,118 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
-  </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
+<nav class="nav">
+  <a href="#s1" class="active">Intro</a>
+  <a href="#s2">Compatibility</a>
+  <a href="#s3">Usage</a>
+  <a href="#s4">Credits</a>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
-</div>
+<article id="s1">
+  <h1>Smooth Anchor Scrolling</h1>
+  <p>This <b>Smooth Anchor Scrolling</b> pen was written to reduce the bloat of your project and provide a simple and easy solution for projects using Jquery to apply smooth link scrolling throughout your application or website.</p>
+  <p>Example link to <span class="nav"><a href="#s3">Usage</a></span></p>
+</article>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
+<article id="s2">
+  <h2>Compatibility 👍</h2>
+  <p>Due to leveraging Jquery, this CodePen works well on all Browsers, both Desktop and Mobile also work perfectly.</p>
+</article>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
+<article id="s3">
+  <h2>Usage</h2>
+  <p>Simply link to any <code>id</code> on your page from within your <code>.nav</code>.</p>
+</article>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-</footer>
+<article class="margin" id="s4">
+  <h2>Credits</h2>
+  <p>This script was written by myself and is intended for public use. please <b>do not</b> sell this script as an individual product. It may be included in your projects that are sold as an entire website or application.</p>
+  <p>If you like this pen, you can follow me on <a href="https://twitter.com/uixmat/" target="_blank">Twitter</a>.</p>
+</article>
 
-</body>
-</html>
+_________________________________________________________________________________________________________________________
+
+* { box-sizing: border-box;}
+
+$primaryColor: deeppink;
+$dkBg: #303947;
+$itemBg: #6788a7;
+$itemBgOdd: darken(#6788a7,15%);
+
+html, body {
+  font-family: "Arial", sans-serif;
+  background: #fff;
+  padding: 80px 30px 30px;
+  color: #444;
+  height: 100%;
+}
+
+ol, ul {
+  margin: 0 0 50px 0;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 0;
+  &:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+code {
+  background: #f8f8f8;
+  color: #d64f9b;
+  border: 1px solid #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+a {
+  font-weight: bold;
+  color: $primaryColor; 
+  text-decoration: none;
+  transition: all 200ms;
+  &:hover,
+  &:focus{
+    color: black;
+  }
+}
+
+article {
+  min-height: 50vh;
+  margin-bottom: 50px;
+  .margin {
+    margin-bottom: 100vh;
+  }
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $dkBg;
+  position: fixed;
+  padding: 30px;
+  a {
+    display: inline-flex;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+    &.active {
+      color: $primaryColor;
+    }
+  }
+}
+
+_________________________________________________________________________________________________________________________
+
+
+function scrollNav() {
+  $('.nav a').click(function(){
+    $(".active").removeClass("active");     
+    $(this).addClass("active");
+    
+    $('html, body').stop().animate({
+      scrollTop: $($(this).attr('href')).offset().top - 160
+    }, 300);
+    return false;
+  });
+}
+scrollNav();
